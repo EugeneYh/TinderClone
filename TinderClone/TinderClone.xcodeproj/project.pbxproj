@@ -14,9 +14,11 @@
 		4229406825AB33790057BE8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4229406725AB33790057BE8C /* Preview Assets.xcassets */; };
 		4229406B25AB33790057BE8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4229406925AB33790057BE8C /* LaunchScreen.storyboard */; };
 		4229407425AB49390057BE8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4229407325AB49390057BE8C /* ViewController.swift */; };
+		DEFAB86A2826E3F7FB7AB7A5 /* Pods_TinderClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D004770E49F4A85F8020812 /* Pods_TinderClone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D004770E49F4A85F8020812 /* Pods_TinderClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4229405B25AB33760057BE8C /* TinderClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4229405E25AB33760057BE8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4229406025AB33760057BE8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		4229406A25AB33790057BE8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4229406C25AB33790057BE8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4229407325AB49390057BE8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43792C9894E12D3D5584C1A4 /* Pods-TinderClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderClone.debug.xcconfig"; path = "Target Support Files/Pods-TinderClone/Pods-TinderClone.debug.xcconfig"; sourceTree = "<group>"; };
+		649468AA6E993874E4559782 /* Pods-TinderClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderClone.release.xcconfig"; path = "Target Support Files/Pods-TinderClone/Pods-TinderClone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEFAB86A2826E3F7FB7AB7A5 /* Pods_TinderClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04F15F47B244DAB6678C698A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43792C9894E12D3D5584C1A4 /* Pods-TinderClone.debug.xcconfig */,
+				649468AA6E993874E4559782 /* Pods-TinderClone.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4229405225AB33760057BE8C = {
 			isa = PBXGroup;
 			children = (
 				4229405D25AB33760057BE8C /* TinderClone */,
 				4229405C25AB33760057BE8C /* Products */,
+				04F15F47B244DAB6678C698A /* Pods */,
+				EEF51F44014006AA3CE3A6B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +95,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		EEF51F44014006AA3CE3A6B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D004770E49F4A85F8020812 /* Pods_TinderClone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4229406F25AB33790057BE8C /* Build configuration list for PBXNativeTarget "TinderClone" */;
 			buildPhases = (
+				D42C17FD837950CB73EFE982 /* [CP] Check Pods Manifest.lock */,
 				4229405725AB33760057BE8C /* Sources */,
 				4229405825AB33760057BE8C /* Frameworks */,
 				4229405925AB33760057BE8C /* Resources */,
+				37C6C66E7AE42F162B3723A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,6 +169,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37C6C66E7AE42F162B3723A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinderClone/Pods-TinderClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinderClone/Pods-TinderClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinderClone/Pods-TinderClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D42C17FD837950CB73EFE982 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TinderClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4229405725AB33760057BE8C /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		4229407025AB33790057BE8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43792C9894E12D3D5584C1A4 /* Pods-TinderClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -308,6 +378,7 @@
 		};
 		4229407125AB33790057BE8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 649468AA6E993874E4559782 /* Pods-TinderClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
